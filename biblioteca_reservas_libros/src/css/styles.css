@@ -1,0 +1,189 @@
+/*--------------------------------------------------------------------------------------------
+Proyecto: Aplicación de reserva de libros
+Version: 1.0
+Ultimo cambio: 30.09.2023
+Asignado a: Carlos Sanchez Roman
+
+ [Tabla de contenidos]
+
+1. Header: Propiedades para el encabezado de la página.
+2. Body y propiedades generales: Propiedades para el cuerpo de la página y propiedades generales de este CSS.
+3. Menú: Propiedades para el menú de navegación.
+4. Formulario: Propiedades para los formularios de la página.
+5. Listas: Propiedades para las listas de elementos.
+6. Mensajes: Propiedades para los mensajes en la página.
+
+ [Códigos de color]
+
+Color de fondo por defecto[#f0f0f0]
+Color por defecto de la fuente[black]
+
+Color de fondo de los elementos:
+ - Clase container: #fff
+ - Clase header, menu a:hover, form button: #007bff
+ - Clase form button:hover: #0056b3
+ - Clase mensaje.exito: #4caf50
+ - Clase mensaje.error: #f44336
+
+Color de fuente de los elementos:
+ - Clase header, menu a:hover, form button, mensaje.exito, 
+   mensaje.error: #fff
+ - Clase menu a: #333
+
+ [Tipografía]
+
+Fuente por defecto[Arial, sans-serif]
+Tamaño de fuente predeterminado[14px]
+
+Tamaños de fuente personalizados:
+ - Clase header h1[24px]
+
+ [Márgenes y espaciado]
+
+Margen: 0
+Espaciado: 0
+
+Márgenes personalizados:
+ - Clase menu li, form input, list li, mensaje: 10px bottom
+ - Clase form: 20px bottom
+ - Clase form label: 5px bottom
+
+Espaciados personalizados:
+ - Clase container: 20px
+ - Clase header, menu a, form input, list li, mensaje: 10px
+ - Clase form button: 10px 20px
+
+--------------------------------------------------------------------------------------------*/
+
+/* Propiedades básicas para el body */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+  }
+
+/* Propiedades para el contenedor principal de la página */
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+
+/* Propiedades para el header */
+  .header {
+    text-align: center;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px 5px 0 0;
+  }
+
+/* Propiedades para el título en el header */
+  .header h1 {
+    margin: 0;
+    font-size: 24px;
+  }
+
+/* Propiedades para la lista del menú */
+  .menu {
+    list-style-type: none;
+    padding: 0;
+  }
+
+/* Propiedades para los elementos de la lista del menú */
+  .menu li {
+    margin-bottom: 10px;
+  }
+
+/* Propiedades para los enlaces del menú */
+  .menu a {
+    text-decoration: none;
+    color: #333;
+    background-color: #f0f0f0;
+    padding: 10px;
+    display: block;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+  }
+
+/* Propiedades para los enlaces del menú al pasar el ratón por encima */
+  .menu a:hover {
+    background-color: #007bff;
+    color: #fff;
+  }
+
+/* Propiedades para el formulario */
+  .form {
+    margin-bottom: 20px;
+  }
+
+/* Propiedades para las etiquetas de los campos del formulario */
+  .form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+
+/* Propiedades para los campos de texto y número del formulario */
+  .form input[type="text"],
+  .form input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+/* Propiedades para el botón del formulario */
+  .form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+/* Propiedades para el botón del formulario al pasar el ratón por encima */
+  .form button:hover {
+    background-color: #0056b3;
+  }
+
+/* Propiedades para las listas */
+  .list {
+    list-style-type: none;
+    padding: 0;
+  }
+
+/* Propiedades para los elementos de las listas */
+  .list li {
+    background-color: #f0f0f0;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+/* Propiedades para los mensajes */
+  .mensaje {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+
+/* Propiedades para el mensaje de éxito */
+  .mensaje.exito {
+    background-color: #4caf50;
+    color: #fff;
+  }
+
+/* Propiedades para el mensaje de error */
+  .mensaje.error {
+    background-color: #f44336;
+    color: #fff;
+  }
