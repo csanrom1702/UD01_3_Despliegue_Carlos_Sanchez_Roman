@@ -7,7 +7,7 @@ El formato está basado en [Archivo Changelog Manuel Cillero](https://manuel.cil
 ### Añadido
 
 - Creación de la clase java [EstadoLibro](\src\java\EstadoLibro.java)
-- Creación de la clase java [Libro](\src\java\Libro.java)
+- Creación de la clase java [Libro](\src\java\Libro.java).
 - Creación de la clase java [Reserva](\src\java\Reserva.java)
 - Creación de la clase java [Main](\src\java\Main.java)
 - Creación de la clase javascript [Libro](\src\js\Libro.js)
